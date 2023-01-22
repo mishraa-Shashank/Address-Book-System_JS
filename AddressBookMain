@@ -7,6 +7,7 @@ exit = true;
 
 while (exit) {
 
+    
     console.log("1.Add contact  2.Display Contact  3.Edit Contact  4.Delete Contact  5.Count Contact  0.Exit");
     let options = parseInt(prompt());
 
