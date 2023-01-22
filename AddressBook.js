@@ -1,14 +1,15 @@
 const ContactDetails = require("./Contact.js");
+const prompt = require("prompt-sync")();
 
 let person = new ContactDetails();
 
-person.setFirstName("Shashank");
-person.setLastName("Mishra");
-person.setAddress("Dhoomanganj");
-person.setCity("Prayagraj");
-person.setState("Uttar Pradesh");
-person.setZip("211011");
-person.setPhoneNumber("8081176945");
-person.setEmail("bshashank@gmail.com");
+person.setFirstName(prompt("Enter First Name : "));
+person.setLastName(prompt("Enter Last Name : "));
+person.setAddress(prompt("Enter Address : "));
+person.setCity(prompt("Enter City Name : "));
+person.setState(prompt("Enter State Name : "));
+person.setZip(prompt("Enter Zip : "));
+person.setPhoneNumber(prompt("Enter Phone Number : "));
+person.setEmail(prompt("Enter Email Id : "));
 
 console.log(person.toString());
