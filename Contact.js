@@ -18,6 +18,10 @@ class Contact {
         }
     }
 
+    getFirstName() {
+        return this.firstName;
+    }
+
     setLastName(lastName) {
         let pattern = RegExp('^[A-Z][a-z]{2,}');
         if (pattern.test(lastName)) {
